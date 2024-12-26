@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <main
+    class="w-full h-full bg-gray-600 flex-1 flex flex-col md:flex-row justify-start  p-2">
+
+
+    <div class="w-full h-auto md:h-full bg-gray-600 flex flex-col items-center justify-start p-2">
+    <form action=""
+    
+    id="feedback_form"
+    class="bg-gray-800 flex flex-col gap-2 rounded-lg  w-full md:w-1/2 lg:w-2/3 p-12">
+
+    <div class="image_container flex flex-col justify-center items-center gap-4">
+        <img src="./images/feedback.png" alt="feedback-image" class="w-20 lg:w-36 h-auto mx-auto">
+        <h1 onclick="handleFormHeading()" id="form_heading" class="text-center text-2xl font-bold mb-5">Feedback Form</h1>
+    </div>
+    <p class="text-gray-400">How was your experince with use ?</p>
+    <!-- name field -->
+     <div class="form_input">
+        
+         <label for="name" class="text-lg">Name</label>
+         <input type="text" name="name" id="name" 
+         class="w-full px-2 py-2 mt-1 text-gray-300  rounded-lg bg-gray-700 text-white"
+         placeholder="Enter your name">
+     </div>
+     <div class="form_input">
+        
+        <label for="email" class="text-lg">Email</label>
+        <input type="email" name="email" id="email" 
+        class="w-full px-2 py-2 mt-1 text-gray-300  rounded-lg bg-gray-700 text-white"
+        placeholder="Enter your email">
+    </div>
+    <div class="input_field">
+        
+        <label for="rating" class="text-lg">Rating</label>
+       
+        <select name="rating" id="rating"  class="w-full px-2 py-2 mt-1 text-gray-300  rounded-lg bg-gray-700 text-white">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            
+        </select>
+       
+       
+    </div>
+
+    <div class="input_field flex flex-col">
+        
+    <label for="message" class="text-lg">Message</label>
+    <textarea  
+     name="message"
+     id="message" 
+     rows="5"
+     class="w-full px-2 py-2 mt-1 text-gray-300  rounded-lg bg-gray-700 text-white">
+    </textarea>
+    </div>
+
+
+    
+<!-- button -->
+ <div class="input_field flex justify-center gap-5">
+    <button  type="submit"
+    id="submit_btn"
+    class="bg-green-600 hover:bg-green-800 p-2 rounded-lg">Submit</button>
+    <button 
+    id="clear_button"
+    class="bg-yellow-600 hover:bg-yellow-800 p-2 rounded-lg"
+    >Clear</button>
+ </div>
+
+    </form>
+     
+    </div>
+
+
+
+    <div class="w-full f-full bg-gray-600 flex flex-col items-center justify-start p-2 border overflow-auto h-[900px]">
+       
+    <!-- feedback -->
+        <div class=" feedback_container w-full h-full bg-gray-900 flex flex-col gap-5 items-center justify-start p-2  ">
+               
+           
+          
+           
+        </div>
+    
+    
+    
+    </div>
+   
+   </main>
+   <script src="./js/feedback.js"></script>
+</body>
+</html>
